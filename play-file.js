@@ -12,6 +12,7 @@ const root = {
         right: { val: 5, left: null, right: null },
     },
 };
+
 //   1
 // 2   3
 //4   5 6
@@ -27,26 +28,29 @@ class Queue {
         if (this.isEmpty()) {
             throw new Error("Queue is empty");
         }
-        return this.items.shift();
+        return this.items.shift(); //shift() removes and returns first el in array
     }
     isEmpty() {
         return this.items.length === 0;
     }
 }
 
-function invertTree(root) {
-    const queue = new Queue(root);
-    
+function layerTree(root) {
+    console.log("root", root)
+    const queue = new Queue();
+    console.log('queue before enqueue', queue)
     queue.enqueue(root)
     console.log("queue", queue)
     while(!queue.isEmpty()){
         let currentLevel = []
-        const levelSize = queue.items.length;
+        const levelSize = queue.items.length; //must capture levelSize before nodes are added in for loop to prevent 
+        //accidentally capturing next level of nodes.
         console.log("levelSize", levelSize)
 
-        for(let i = 0; i < levelSize;i++){
-            const node = queue.dequeue()
+        for(let i = 0; i < levelSize;i++){ //once done iterating over current level size, while loop re-engages and moves to next levelSize
+            const node = queue.dequeue() //dequeue uses shift() which removes/returns first el in array
             console.log("node", node)
+            console.log("queue2", queue) //this queue will show what's left in queue after shift()
             currentLevel.push(node.val)
             // console.log("TEST", currentLevel)
             if(node.left) queue.enqueue(node.left)
@@ -56,4 +60,4 @@ function invertTree(root) {
     }
 }
 
-invertTree(root)
+layerTree(root)
