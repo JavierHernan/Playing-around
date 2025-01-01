@@ -7,18 +7,29 @@ const root = {
     6: []
 }
 
-function bfsLayerTree(root) {
+function arrayLayerTree(root) {
     const queueList = []
-    queueList.push(root)
-    console.log("queueList", queueList)
-    while(!queueList.length === 0) {
+    queueList.push(1)
+    // console.log("queueList", queueList)
+    // while(queueList.length > 0) {
+    while(queueList.length !== 0) {
         let currentLevel = []
         const levelSize = queueList.length;
 
-        // for(let i = 0; i < levelSize; i++) {
-        //     const node = qu
-        // }
+        for(let i = 0; i < levelSize; i++) {
+            const nodeKey = queueList.shift();
+            currentLevel.push(nodeKey)
+            const children = root[nodeKey];
+            if(children) {
+                for (const child of children) {
+                    if (child !== null) {
+                        queueList.push(child); // Add non-null children to the queue
+                    }
+                }
+            }
+        }
+        console.log("currentLevel", currentLevel)
     }
 }
 
-bfsLayerTree(root)
+arrayLayerTree(root)
