@@ -40,6 +40,7 @@ let ME = new Character();
 ME.equipArmor(ChainMail)
 console.log("ME.equipArmor", ME)
 let Spear = new Weapon(0,6);
+Spear.shaftLength = 5;
 ME.equipWeapon(Spear)
 console.log("ME.equipWeapon", ME)
 // let Fedora = new FancyHat();
