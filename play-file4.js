@@ -3,7 +3,7 @@ let array1 = [1, 2, 3]
 let array2 = ["apple", "banana", "grape"]
 let array3 = ["car", "+"]
 
-let bigArr = [array1, array2, array3]
+let bigArr = [array1, array2, array3];
 
 // function toOneString(arg) {
 //     // console.log("ARG", arg)
@@ -24,7 +24,18 @@ let bigArr = [array1, array2, array3]
 // console.log(array1.toString() + "," + array2.toString() + "," + array3.toString())
 
 // let toOneString = (arg) => {return arg.toString()}
-let toOneString = (array1, array2, array3) => {return array1.toString() + "," + array2.toString() + "," + array3.toString()}
+// let toOneString = (array1, array2, array3) => {return array1.toString() + "," + array2.toString() + "," + array3.toString()}
+
+((arg) => {
+    let finalArr = []
+        for(let i = 0; i < arg.length; i++) {
+            let currentArr = arg[i]
+            for(let j = 0; j < currentArr.length; j++) {
+                finalArr.push(currentArr[j])
+            }
+        }
+        console.log(finalArr.toString())
+})(bigArr);
 
 
-console.log(toOneString(array1, array2, array3))
+// console.log(toOneString(array1, array2, array3))
