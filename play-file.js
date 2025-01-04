@@ -45,18 +45,18 @@ function layerTree(root) {
         let currentLevel = []
         const levelSize = queue.items.length; //must capture levelSize before nodes are added in for loop to prevent 
         //accidentally capturing next level of nodes.
-        console.log("levelSize", levelSize)
+        // console.log("levelSize", levelSize)
 
         for(let i = 0; i < levelSize;i++){ //once done iterating over current level size, while loop re-engages and moves to next levelSize
             const node = queue.dequeue() //dequeue uses shift() which removes/returns first el in array
-            console.log("node", node)
-            console.log("queue2", queue) //this queue will show what's left in queue after shift()
+            // console.log("node", node)
+            // console.log("queue2", queue) //this queue will show what's left in queue after shift()
             currentLevel.push(node.val)
             // console.log("TEST", currentLevel)
             if(node.left) queue.enqueue(node.left)
             if(node.right) queue.enqueue(node.right)
         }
-    console.log("currentLevel", currentLevel)
+    // console.log("currentLevel", currentLevel)
     }
 }
 
