@@ -20,7 +20,7 @@ let hashMap = {}
 
 const repeatCountFunc = (arr) => {
     for(let i = 0; i < arr.length; i++) {
-        console.log("arr[i]", arr[i])
+        // console.log("arr[i]", arr[i])
         if(!hashMap[arr[i]]) {
             hashMap[arr[i]] = 1
         } else {
@@ -28,9 +28,18 @@ const repeatCountFunc = (arr) => {
         }
     }
     // console.log("hashMap", hashMap)
+    let highestCountVal = 0;
+    let highestCountKey = 0;
     for(let count in hashMap) {
-        console.log("count", count)
+        // console.log("count", hashMap[count])
+        if(hashMap[count] > highestCountVal) {
+            console.log("count", count, "hashMap[count]", hashMap[count])
+            highestCountVal = hashMap[count]
+            highestCountKey = count
+            // console.log("highestCountKey", highestCountKey)
+        }
     }
+    return "Key: " + highestCountKey + ", Value: " + highestCountVal
 }
-
-repeatCountFunc(arr)
+console.log(repeatCountFunc(arr))
+// repeatCountFunc(arr)
