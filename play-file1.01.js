@@ -40,6 +40,6 @@ function printEveryLayer(tree) {
 
     //loop over queue while queue is not Empty
     while(!queue.isEmpty()) {
-        
+        //
     }
 }
