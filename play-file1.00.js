@@ -1,4 +1,5 @@
 // let root = [1,2,3,4,5,6]
+//Print each Layer of a Tree, Use BFS
 const root = {
     val: 1,
     left: {
