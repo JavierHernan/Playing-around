@@ -39,9 +39,9 @@ class Queue {
 function layerTree(root) {
     console.log("root", root)
     const queue = new Queue();
-    console.log('queue before enqueue', queue)
+    // console.log('queue before enqueue', queue)
     queue.enqueue(root)
-    console.log("queue", queue)
+    // console.log("queue", queue)
     while(!queue.isEmpty()){
         let currentLevel = []
         const levelSize = queue.items.length; //must capture levelSize before nodes are added in for loop to prevent 
@@ -57,7 +57,7 @@ function layerTree(root) {
             if(node.left) queue.enqueue(node.left)
             if(node.right) queue.enqueue(node.right)
         }
-    // console.log("currentLevel", currentLevel)
+    console.log("currentLevel", currentLevel)
     }
 }
 
