@@ -45,3 +45,4 @@ ME.equipWeapon(Spear)
 console.log("ME.equipWeapon", ME)
 // let Fedora = new FancyHat();
 
+// node play-file5.js
