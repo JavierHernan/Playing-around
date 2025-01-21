@@ -24,11 +24,25 @@ function randomSortArr(arr) {
         }
     }
 
-    console.log("Final sorted newArr:", newArr);
+    // console.log("Final sorted newArr:", newArr);
     return newArr;
 }
 const thisArr = randomSortArr(arr)
 console.log("thisArr", thisArr)
+//function that invokes randomSortArr 100 times
+function randomInvocation(arr) {
+    // let hundred = 100;
+    let currentArr = arr;
+    for(let i = 0; i < 1000; i++) {
+        currentArr = randomSortArr(arr)
+        console.log("currentArr", currentArr, i)
+        i++
+    }
+    return currentArr;
+}
+
+// randomInvocation(thisArr)
+console.log("randomInvocation(thisArr)", randomInvocation(thisArr))
 //Insert
 
 //Bubble
