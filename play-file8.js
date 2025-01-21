@@ -42,7 +42,9 @@ function randomInvocation(arr) {
 }
 
 // randomInvocation(thisArr)
-console.log("randomInvocation(thisArr)", randomInvocation(thisArr))
+let starterArr = randomInvocation(thisArr)
+console.log("starterArr", starterArr)
+
 //Insert
 
 //Bubble
