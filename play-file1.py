@@ -7,6 +7,9 @@ height = 5.8
 is_tough = True
 x, y, z = 1, 2, 3
 # write a function
+def addNums(num1, num2):
+    return num1 + num2
+print(f"{addNums(5, 5)} is the result of adding two numbers together")
 
 # write a conditional
 if age > 25:
