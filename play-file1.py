@@ -25,4 +25,10 @@ if name == "Javier" and age == 29:
 if height == 5.9 or is_tough == True:
     print("You are either 5.9 or you are tough")
 
+# lambda functions
+
+#Generator Functions (yield)
+
+#keyword arguments in functions
+
 # python3 play-file1.py
