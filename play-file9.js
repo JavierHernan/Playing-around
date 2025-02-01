@@ -6,7 +6,6 @@ let fiz = "fiz";
 
 let FizzBuzzFunc = (arg) => {
     let argFormatted = arg.toUpperCase();
-    // console.log("arg", argFormatted)
     // if(argFormatted == "FIZZ") {
     //     console.log("Fizz")
     // } else if (argFormatted == "BUZZ") {
