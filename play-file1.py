@@ -26,6 +26,12 @@ if height == 5.9 or is_tough == True:
     print("You are either 5.9 or you are tough")
 
 # lambda functions - small anonymous functions for quick one time use
+# add = lambda x, y: x + y
+# print(add(3,5))
+
+people = [('Joe', 29), ('Donald', 75),('Barack', 60)]
+sorted_people = sorted(people, key=lambda x: x[1])
+print(sorted_people)
 
 #Generator Functions (yield)
 
