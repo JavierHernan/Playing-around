@@ -37,4 +37,4 @@ print(sorted_people)
 
 #keyword arguments in functions
 
-# python3 play-file1.py
+python3 play-file1.py
