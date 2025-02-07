@@ -25,7 +25,7 @@ if name == "Javier" and age == 29:
 if height == 5.9 or is_tough == True:
     print("You are either 5.9 or you are tough")
 
-# lambda functions
+# lambda functions - small anonymous functions for quick one time use
 
 #Generator Functions (yield)
 
