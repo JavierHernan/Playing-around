@@ -1,6 +1,7 @@
 package main
 
 import "core:fmt"
+import "core:os"
 
 variables :: proc() {
     //declare variables
@@ -20,5 +21,6 @@ variables :: proc() {
 main :: proc() {
     fmt.println("Hello from Odin!")
     variables()
+    fmt.println("home directory is ", os.get_env("HOME"))
 }
 //odin run play-file1.odin -file
