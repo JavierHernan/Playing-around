@@ -1,7 +1,7 @@
 //mess around with classes and constructors
 class Armor {
     constructor(slashN, pierceN) {
-        this.slashNegate = slashN;
+        this.slashNegate = slashN; //this is dependency injection
         this.pierceNegate = pierceN;
     }
 }
