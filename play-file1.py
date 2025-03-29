@@ -33,8 +33,8 @@ people = [('Joe', 29), ('Donald', 75),('Barack', 60)]
 sorted_people = sorted(people, key=lambda x: x[1])
 print(sorted_people)
 
-#Generator Functions (yield)
+Generator Functions (yield)
 
-# keyword arguments in functions
+keyword arguments in functions
 
 # python3 play-file1.py
