@@ -35,6 +35,6 @@ print(sorted_people)
 
 # Generator Functions (yield)
 
-# keyword arguments in functions
+keyword arguments in functions
 
 # python3 play-file1.py
