@@ -12,18 +12,18 @@ def addNums(num1, num2):
 print(f"{addNums(5, 5)} is the result of adding two numbers together")
 
 # write a conditional
-# if age > 25:
-#     print(f"{name}, is older than 25")
-# elif age == 25:
-#     print(f"{name}, is 25")
-# else:
-#     print(f"{name}, is less than 25")
+if age > 25:
+    print(f"{name}, is older than 25")
+elif age == 25:
+    print(f"{name}, is 25")
+else:
+    print(f"{name}, is less than 25")
 
-# if name == "Javier" and age == 29:
-#     print("Javier is 29")
+if name == "Javier" and age == 29:
+    print("Javier is 29")
 
-# if height == 5.9 or is_tough == True:
-#     print("You are either 5.9 or you are tough")
+if height == 5.9 or is_tough == True:
+    print("You are either 5.9 or you are tough")
 
 # lambda functions - small anonymous functions for quick one time use
 # add = lambda x, y: x + y
