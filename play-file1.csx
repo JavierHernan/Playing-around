@@ -23,6 +23,4 @@ FizzBuzz(5);
 FizzBuzz(3);
 FizzBuzz(2);
 
-
-
 // dotnet script play-file1.csx
