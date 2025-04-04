@@ -8,8 +8,13 @@ public void countingFunction(arr)
     {
         if(!object[i])
         {
-            
+            countingObject[i] = 1;
+        } else
+        {
+            countingObject[i]++
         }
     }
+    Console.WriteLine(countingObject)
 }
-// dotnet script play-file1.csx
+countingFunction(nums)
+// dotnet script play-file2.csx
