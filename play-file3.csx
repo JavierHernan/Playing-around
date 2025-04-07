@@ -10,3 +10,6 @@ string[] myStrArray = {"One","Two","Three"}
 //array of booleans
 bool[] myBoolArray = {true, false,true}
 //Array of mixed data types
+object[] myMixedArray = {1,"Two", false}
+
+//accessing index in myMixedArray with and without Casting:
