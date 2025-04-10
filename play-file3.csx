@@ -18,3 +18,5 @@ object[] myMixedArray = {1,"Two", false}
 //without casting:
 string secondInd = myStrArray[1]
 
+//with casting:
+int firstInd = (int)myMixedArray[0]
