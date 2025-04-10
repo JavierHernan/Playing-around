@@ -13,3 +13,8 @@ bool[] myBoolArray = {true, false,true}
 object[] myMixedArray = {1,"Two", false}
 
 //accessing index in myMixedArray with and without Casting:
+//if you're accessing an array with mixed data types, you NEED casting
+
+//without casting:
+string secondInd = myStrArray[1]
+
