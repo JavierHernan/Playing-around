@@ -20,3 +20,4 @@ string secondInd = myStrArray[1]
 
 //with casting:
 int firstInd = (int)myMixedArray[0]
+// dotnet script play-file3.csx
