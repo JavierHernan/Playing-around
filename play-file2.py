@@ -12,11 +12,11 @@ tree = {
     7: []
 }
 
-# class Queue:
-#     def __init__(self):
-#         self.items = []
+class Queue:
+    def __init__(self):
+        self.items = []
 
-#     def enqueue(self, el):
-#         self.items.push(el)
+    def enqueue(self, el):
+        self.items.push(el)
 
 # python3 play-file2.py
