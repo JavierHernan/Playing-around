@@ -18,5 +18,8 @@ class Queue:
 
     def enqueue(self, el):
         self.items.push(el)
+    
+    def dequeue(self):
+        return self.items.shift()
 
 # python3 play-file2.py
