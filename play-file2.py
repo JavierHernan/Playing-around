@@ -22,4 +22,7 @@ class Queue:
     def dequeue(self):
         return self.items.shift()
 
+    def isEmpty(self):
+        return self.items.length == 0
+
 # python3 play-file2.py
