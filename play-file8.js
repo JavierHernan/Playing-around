@@ -51,7 +51,7 @@ function InsertFunc(arr) {
     }
     console.log(copyArr)
 }
-// InsertFunc(insertArr)
+InsertFunc(insertArr)
 
 //Bubble
 
