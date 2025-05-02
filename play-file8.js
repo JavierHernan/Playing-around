@@ -42,16 +42,16 @@ console.log("starterArr", starterArr)
 
 //Insert
 //use 2 arrays
-let insertArr = [2,1,3,4,0,6,5,7,9,8]
-function InsertFunc(arr) {
-    let copyArr = arr
-    let sortedArr = []
-    while(copyArr.length > 0) {
-        for(let i = )
-    }
-    console.log(copyArr)
-}
-InsertFunc(insertArr)
+// let insertArr = [2,1,3,4,0,6,5,7,9,8]
+// function InsertFunc(arr) {
+//     let copyArr = arr
+//     let sortedArr = []
+//     while(copyArr.length > 0) {
+//         for(let i = )
+//     }
+//     console.log(copyArr)
+// }
+// InsertFunc(insertArr)
 
 //Bubble
 
