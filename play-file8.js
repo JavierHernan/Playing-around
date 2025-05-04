@@ -47,7 +47,9 @@ function InsertFunc(arr) {
     let copyArr = arr
     let sortedArr = []
     while(copyArr.length > 0) {
-        for(let i = )
+        for(let i = 0; i < copyArr.length; i++) {
+            
+        }
     }
     console.log(copyArr)
 }
