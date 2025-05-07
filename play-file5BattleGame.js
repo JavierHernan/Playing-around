@@ -34,11 +34,11 @@ class Character {
     }
     attack(){
         if(this.weapon.pierceDamage && this.weapon.slashDamage){
-            
+            console.log(`You have done ${this.weapon.pierceDamage} in pierce and ${this.weapon.slashDamage} in slash`)
         } else if(this.weapon.pierceDamage && !this.weapon.slashDamage) {
             console.log(`You have done ${this.weapon.pierceDamage} in pierce`)
         } else if (!this.weapon.pierceDamage && this.weapon.slashDamage) {
-
+            console.log(`You have done ${this.weapon.pierceDamage} in slash`)
         }
     }
 }
