@@ -1,9 +1,10 @@
 
 class Armor {
-    constructor(slashN, pierceN, weightN) {
+    constructor(slashN, pierceN, weightN, specialArmorAbility) {
         this.slashNegate = slashN; //this is dependency injection
         this.pierceNegate = pierceN;
-        this.weight = weightN
+        this.weight = weightN;
+        this.specialArmorAbility = specialArmorAbility;
     }
 }
 
