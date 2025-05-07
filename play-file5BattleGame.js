@@ -32,17 +32,28 @@ class Character {
     wearFancyHat(item) {
         this.fancyHat = item
     }
+    attack(){
+        if(this.weapon.pierceDamage && this.weapon.slashDamage){
+            
+        } else if(this.weapon.pierceDamage && !this.weapon.slashDamage) {
+            console.log(`You have done ${this.weapon.pierceDamage} in pierce`)
+        } else if (!this.weapon.pierceDamage && this.weapon.slashDamage) {
+
+        }
+    }
 }
 
 let ChainMail = new Armor(5,0);
-console.log(ChainMail)
+// console.log(ChainMail)
 let ME = new Character();
 ME.equipArmor(ChainMail)
-console.log("ME.equipArmor", ME)
+// console.log("ME.equipArmor", ME)
 let Spear = new Weapon(0,6);
 Spear.shaftLength = 5;
 ME.equipWeapon(Spear)
-console.log("ME.equipWeapon", ME)
+// console.log("ME.equipWeapon", ME)
+// console.log("ME.weapon", ME.weapon)
+ME.attack()
 // let Fedora = new FancyHat();
 
-// node play-file5.js
+// node play-file5BattleGame.js
