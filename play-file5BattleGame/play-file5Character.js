@@ -26,4 +26,6 @@ class Character {
     }
 }
 
+export default Character;
+
 // node play-file5BattleGame.js

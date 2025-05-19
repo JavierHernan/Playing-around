@@ -7,3 +7,5 @@ class FancyHat {
         this.specialHatAbilityThree = specialHatAbilityThree;
     }
 }
+
+export default FancyHat;

@@ -9,3 +9,6 @@ class Armor {
 }
 
 let ChainMail = new Armor(5,0);
+
+
+export default Armor;
