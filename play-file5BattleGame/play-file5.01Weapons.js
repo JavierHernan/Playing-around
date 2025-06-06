@@ -8,7 +8,4 @@ class Weapon {
     }
 }
 
-let Spear = new Weapon(0,6);
-Spear.shaftLength = 5;
-
 export default Weapon;
